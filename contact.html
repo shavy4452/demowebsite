@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shavy Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1> SUMSUNG</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="electronic.html">Electronic</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="#" class="right">About Us</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>About Company</h2>
+            <div>
+                <image src="samsung.png" style="width:200px">
+            </div>
+            <p>Samsung (Korean: 삼성; Hanja: 三星; Korean pronunciation: [samsʌŋ]; means "three stars" in English) is a South Korean multinational conglomerate headquartered in Samsung Town, Seoul.It comprises numerous affiliated businesses,[1] most of them
+                united under the Samsung brand, and is the largest South Korean chaebol (business conglomerate).</p>
+            <h3>More Text</h3>
+            <p>Samsung was founded by Lee Byung-chul in 1938 as a trading company. Over the next three decades, the group diversified into areas including food processing, textiles, insurance, securities, and retail. Samsung entered the electronics industry
+                in the late 1960s and the construction and shipbuilding industries in the mid-1970s; these areas would drive its subsequent growth. Following Lee's death in 1987, Samsung was separated into four business groups – Samsung Group, Shinsegae
+                Group, CJ Group and Hansol Group. Since 1990, Samsung has increasingly globalised its activities and electronics; in particular, its mobile phones and semiconductors have become its most important source of income. As of 2017, Samsung
+                has the 6th highest global brand value.</p>
+            <h3>OWNERS</h3>
+            <div class="row">
+                <div class="column">
+                    <image src="owner1.jpg" style="width:200px">
+                </div><br>
+                <div>
+                    <image src="owner2.jpg" style="width:200px">
+                </div><br>
+            </div>
+        </div>
+        <div class="main1">
+            <h2>Contact Us </h2>
+            <div class="container">
+                <form>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                    <input id="myBtn1" type="submit" value="Submit">
+                </form>
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal1");
+
+                    // Get the button that opens the modal
+                    var btn = document.getElementById("myBtn1");
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks the button, open the modal 
+                    btn.onclick = function() {
+                        modal.style.display = "block";
+                    }
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() {
+                        modal.style.display = "none";
+                    }
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+
+            </div>
+        </div>
+
+        <!--- right side -->
+
+        <div class="main2">
+
+            <h2>Feedback </h2>
+            Your name:<br><input type="text" name="realname"><br>
+            <br> Your email:<br><input type="text" name="email"> Your Feedbacks:<br>
+            <textarea name="comments" rows="15" cols="50">
+            </textarea>
+            <!-- Trigger/Open The Modal -->
+            <input id="myBtn" type="submit" value="Submit">
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>!! Thanks For Submitting !!</p>
+                </div>
+
+            </div>
+
+            <script>
+                // Get the modal
+                var modal = document.getElementById("myModal");
+
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks the button, open the modal 
+                btn.onclick = function() {
+                    modal.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h1>About</h1>
+        <p>Samsung is a South Korean multinational conglomerate headquartered in Samsung Town, Seoul. It comprises numerous affiliated businesses, most of them united under the Samsung brand, and is the largest South Korean chaebol.Samsung was founded by
+            Lee Byung-chul in 1938 as a trading company.</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /* Style the body */
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        
+        
+        /* Header/logo Title */
+        
+        .header {
+            padding: 80px;
+            text-align: center;
+            background: #1428A0;
+            color: white;
+        }
+        /* Increase the font size of the heading */
+        
+        .header h1 {
+            font-size: 40px;
+        }
+        /* Style the top navigation bar */
+        
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+        /* Style the navigation bar links */
+        
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        /* Right-aligned link */
+        
+        .navbar a.right {
+            float: right;
+        }
+        /* Change color on hover */
+        
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        /* Column container */
+        
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+        }
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        
+        .side {
+            -ms-flex: 30%;
+            /* IE10 */
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        /* Main column */
+        
+        .main {
+            -ms-flex: 70%;
+            /* IE10 */
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+        /* Footer */
+        
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #1428A0;
+            width: 100%;
+        }
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+        
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>SUMSUNG</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="electronic.html">Electronics</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="contact.html" class="right">Feedback Form</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>About Company</h2>
+            <div>
+                <image src="samsung.png" style="width:200px">
+            </div>
+            <p>Samsung (Korean: 삼성; Hanja: 三星; Korean pronunciation: [samsʌŋ]; means "three stars" in English) is a South Korean multinational conglomerate headquartered in Samsung Town, Seoul.It comprises numerous affiliated businesses,[1] most of them
+                united under the Samsung brand, and is the largest South Korean chaebol (business conglomerate).</p>
+            <h3>More Text</h3>
+            <p>Samsung was founded by Lee Byung-chul in 1938 as a trading company. Over the next three decades, the group diversified into areas including food processing, textiles, insurance, securities, and retail. Samsung entered the electronics industry
+                in the late 1960s and the construction and shipbuilding industries in the mid-1970s; these areas would drive its subsequent growth. Following Lee's death in 1987, Samsung was separated into four business groups – Samsung Group, Shinsegae
+                Group, CJ Group and Hansol Group. Since 1990, Samsung has increasingly globalised its activities and electronics; in particular, its mobile phones and semiconductors have become its most important source of income. As of 2017, Samsung
+                has the 6th highest global brand value.</p>
+            <h3>OWNERS</h3>
+            <div class="row">
+                <div class="column">
+                    <image src="owner1.jpg" style="width:200px">
+                </div><br>
+                <div>
+                    <image src="owner2.jpg" style="width:200px">
+                </div><br>
+            </div>
+        </div>
+        <div class="main">
+            <h2>Trending Items and Sales:</h2>
+            <div>
+                <h3>Samsung RS58K6417SL Frost-free Side-by-Side Double-door Refrigerator (654 Ltrs, EZ Clean Steel)</h3>
+                <div class="img" style="height:300px;">
+                    <img src="1.jpg">
+
+
+                </div>
+                <h2>Samsung Sales</h2>
+                <h5>Semiconductor Recovery Seen in Second Quarter</h5>
+                <p>The Semiconductor businesses posted KRW 18.75 trillion in consolidated revenue and KRW 7.77 trillion in operating profit in the fourth quarter.</p>
+                <p>The Memory Business saw overall market demand for NAND and DRAM drop due to macroeconomic uncertainties and adjustments in inventory levels by customers including datacenter companies and smartphone makers. For NAND, overall demand was
+                    low, as major customers opted to hold back on orders in anticipation of further reduction in price.</p>
+                <br>
+                <h2>Consumer Electronics to Focus on Premium Products</h2>
+                <div>
+                    <image src="turnoverdata.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Copyright© 1995-2020 SAMSUNG All Rights Reserved.</p>
+        </div>
+
+</body>
+
+</html>
